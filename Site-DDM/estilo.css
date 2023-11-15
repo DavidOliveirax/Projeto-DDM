@@ -64,6 +64,9 @@ section {
 
 /* Footer */
 footer {
+    background-color: #010101;
+    width: 100%;
+    position: absolute;
     margin-top: 150px;
     color: white;
     text-align: center;
