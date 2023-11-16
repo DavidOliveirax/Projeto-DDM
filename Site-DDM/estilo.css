@@ -53,8 +53,7 @@ header img {
 
 .whats {
     background-color: red;
-    height: 30px;
-    width: 185px;
+    padding: 8px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
