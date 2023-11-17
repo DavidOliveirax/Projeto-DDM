@@ -91,3 +91,9 @@ footer {
 footer > p {
     margin: 0px;
 }
+
+/* Section Login*/
+
+.login {
+    color: black;
+}
