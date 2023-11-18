@@ -30,9 +30,13 @@ h1 {
 }
 
 body {
-    background: rgb(1, 1, 1);
-    background-image: url(Imagens/bg.jpg) ;
-    background-size: 150%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(Imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 /* Header */
@@ -49,6 +53,22 @@ body {
 header img {
     width: 160px;
     padding: 10px;
+}
+
+#home:hover {
+    color: red;
+}
+
+#serv:hover {
+    color: red;
+}
+
+#loja:hover {
+    color: red;
+}
+
+#contato:hover {
+    color: red;
 }
 
 .whats {
