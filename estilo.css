@@ -122,15 +122,19 @@ footer > p {
     margin: 0px;
 }
 
-/* Section Login*/
+/* Configurações Minha conta */
+.login {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 #ilogin {
     color: black;
-    margin: 5px;
+    margin: 3px;
 }
 
 #isenha {
     color: black;
-    margin: 5px;
+    margin: 3px;
 }
 
 #submit {
@@ -141,4 +145,28 @@ footer > p {
 #senha-form {
     color: red;
     text-decoration: underline;
+}
+
+/* Configurações Formulário */
+#inome {
+    margin: 3px;
+}
+
+#inasce {
+    margin: 3px;
+}
+#itel {
+    margin: 3px;
+}
+#iemail1 {
+    margin: 3px;
+}
+#iemail2 {
+    margin: 3px;
+}
+#isenha1 {
+    margin: 3px;
+}
+#isenha2 {
+    margin: 3px;
 }
