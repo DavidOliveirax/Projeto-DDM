@@ -3,52 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Favicon/ddm.ico">
     <title>Minha conta</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
+    <link rel="stylesheet" href="estilo.css">
 <body>
     <header>
         <main class="container">
             <div class="logo">
-                <h1><img src="Imagens/Logo RED 2.png" alt="Logo Header"></h1>
+                <a href="index.html"><img src="imagens/Logo RED 2.png" alt="Logo Header"></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
-                        <a href="https://ddminformatica.com.br/" target="_blank" rel="external">Home &nbsp;</a>
-                        <a href="https://ddminformatica.com.br/servicos/" target="_blank" rel="external">Serviços &nbsp;</a>
-                        <a href="https://ddminformatica.com.br/loja/" target="_blank" rel="external">Loja &nbsp;</a>
-                        <a href="https://ddminformatica.com.br/contato/" target="_blank" rel="external">Contato</a>
-                        
+                        <a href="https://ddminformatica.com.br/" target="_blank" rel="external" id="home">Home &nbsp;</a>
+                        <a href="https://ddminformatica.com.br/servicos/" target="_blank" rel="external" id="serv">Serviços &nbsp;</a>
+                        <a href="https://ddminformatica.com.br/loja/" target="_blank" rel="external" id="loja">Loja &nbsp;</a>
+                        <a href="https://ddminformatica.com.br/contato/" target="_blank" rel="external" id="contato">Contato</a>
                     </ul>
                 </nav>
             </div>
-            <div class="whats">
+            <div class="botão-home">
                 <ul>
-                    <h1><a href="https://wa.me/5511934604208" target="_blank" rel="external">Orçamento Gratuito!</h1>
+                    <a href="https://wa.me/5511934604208" target="_blank" rel="external">Orçamento Gratuito!</a>
                 </ul>
             </div>
         </main>    
     </header>
     <main>
         <section class="login">
-            <div>
-                <p>Informe os dados para acessar sua conta.</p>
-                Login: <input type="ltext"></input>
-            </div>
-            <div>
-                Senha: <input type="ltext"></input>
-                <p>Esqueceu sua senha? Clique aqui.</p>
-            </div>
-            <div>
-                <input type="button" value="Entrar">
-            </div>
+            <p>Informe os dados para acessar sua conta:</p>
+            <form action="cadastro.js" method="POST" autocomplete="on">
+                <p><label for="ilogin">Login:</label>
+                    <input type="text" name="login" id="ilogin" required minlength="6" 
+                    maxlength="20" autocomplete="username">
+                </p>
+                <p><label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" required minlength="6"
+                    maxlength="20" autocomplete="current-password">
+                </p>
+                <p><input type="submit" value="Entrar" id="submit"></p>
+            </form>
+            <p>Esqueceu sua senha? <a href="#" id="senha-form">Clique aqui.</a></p>
+            
         </section>
     </main>
     <footer>
-        <div>
-            <p>&copy; powered by BHX</p>
-        </div>    
+        <div class="footer-container">
+            <div>
+                <nav>
+                    <ul>
+                        <p><a href="#" id="conta">Minha Conta </a></p>
+                        <p><a href="#">Quem Somos</a></p>
+                        <p><a href="#">Como comprar</a></p>
+                        <p><a href="#">Trocas e Devoluções</a></p>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <p><a href="#">Correios</a></p>
+                        <p><a href="#">MercadoPago</a></p>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="imagens/Logo RED 2.png" alt="Logo Footer" id="imagem">
+            </div>
+        </div> 
     </footer>     
 </body>
     <script src="script.js"></script>

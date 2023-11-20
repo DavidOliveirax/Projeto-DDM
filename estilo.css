@@ -29,7 +29,8 @@ h1 {
     color: black;
 }
 
-body {
+/* Configurações Body & HTML */
+html, body {
     height: 100vh;
     background-color: black;
     background-image: url(imagens/bg.jpg);
@@ -43,7 +44,7 @@ body {
 .container {
     background-color: rgb(49, 48, 48);
     width: 100%;
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
     display: flex;
@@ -71,7 +72,7 @@ header img {
     color: red;
 }
 
-.whats {
+.botão-home {
     background-color: red;
     padding: 8px;
     display: flex;
@@ -80,7 +81,7 @@ header img {
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.267);
     
 }
-.whats:hover {
+.botão-home:hover {
     background-color: rgb(151, 56, 56);
     
 }
@@ -97,15 +98,24 @@ section {
 }
 
 /* Footer */
-footer {
+.footer-container {
     background-color: #010101;
     width: 100%;
     position: absolute;
     margin-top: 150px;
     color: white;
-    text-align: center;
-    font-style: italic;
     padding: 50px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
+}
+
+#imagem {
+    width: 200px;
+}
+
+#conta:hover {
+    color: red;
 }
 
 footer > p {
@@ -113,7 +123,22 @@ footer > p {
 }
 
 /* Section Login*/
-
-.login {
+#ilogin {
     color: black;
+    margin: 5px;
+}
+
+#isenha {
+    color: black;
+    margin: 5px;
+}
+
+#submit {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#senha-form {
+    color: red;
+    text-decoration: underline;
 }
