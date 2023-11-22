@@ -30,34 +30,28 @@ form.addEventListener("submit", (event) => {
         return
     }
 
-    if(!validatePassword(senhaInput.value)) {
+    if(!validatePassword(senhaInput.value, 8)) {
         alert("A senha precisa ter no mínimo 8 dígitos!")
         return
     }
 
     // Se todos os campos estiverem corretos, envie o form.
-    form.submit()
+    form.submit();
 })
 
 // Validar Email
 function isEmailValid(email) {
-
-    const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]{2,}$/
-    );
-    if(emailRegex.text(email)) {
+    const emailRegex = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z]{2,}$/)
+    if(emailRegex.test(email)) {
         return true
-    } else {
-        return false
     }
+    return false
+ }
 
 // Validar Senha
 function validatePassword(password, minDigits) {
     if(password.length >= minDigits) {
         return true
-    } else {
-        return false
     }
-}
-
+    return false
 }
