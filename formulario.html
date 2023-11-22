@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="imagens/Favicon/ddm.ico">
     <title>Criar conta</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="media-query.css" media="screen">
 </head>
 <body>
     <header>
@@ -34,22 +33,25 @@
     <main>
         <section>
             <p>Para criar sua conta, preencha os dados nos campos necessários.</p><br>
-                <form action="cadastro.js" method="GET" autocomplete="on" class="form">
+                <form method="GET" autocomplete="on" class="form" id="formulario">
+
                     <label for="inome">Nome completo: 
                         <input type="text" name="nome" id="inome"></label><br>
+
                     <label for="inasce">Data de Nascimento:
                         <input type="date" name="nasce" id="inasce"></label><br>
+
                     <label for="itel">Numero de telefone:
                         <input type="tel" name="telefone" id="itel"></label><br>
+
                     <label for="iemail1">Email:
                         <input type="email" name="email" id="iemail1"></label><br>
-                    <label for="iemail2">Confirmar Email:
-                        <input type="email" name="email" id="iemail2"></label><br>
-                    <label for="isenha1">Digite uma senha:
+
+                    <label for="isenha1">Digite sua senha:
                         <input type="password" name="senha" id="isenha1"></label><br>
-                    <label for="isenha2">Confirmar senha:
-                        <input type="password" name="senha" id="isenha2"></label><br>
+
                     <p><input type="submit" value="Criar conta" id="submit"></p>
+
                 </form>
                 <a href="minhaconta.html" id="senha-form">Voltar</a></p>      
         </section>
@@ -80,5 +82,5 @@
         </div> 
     </footer>     
 </body>
-    <script src="script.js"></script>
+    <script src="cadastro.js"></script>
 </html>
