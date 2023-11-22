@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/Favicon/ddm.ico">
     <title>DDM Informática</title>
-</head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media-query.css" media="screen">
+</head>
 <body>
     <header>
         <div class="container">
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
             <div class="logo">
                 <a href="index.html" rel="internal"><img src="imagens/Logo RED 2.png" alt="Logo Header"></a>
             </div>
             <div class="menu">
-                <nav>
+                <nav id="itens">
                     <ul>
                         <a href="https://ddminformatica.com.br/" target="_blank" rel="external" id="home">Home &nbsp;</a>
                         <a href="https://ddminformatica.com.br/servicos/" target="_blank" rel="external" id="serv">Serviços &nbsp;</a>
