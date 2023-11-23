@@ -93,9 +93,19 @@ html, body {
     justify-content: space-evenly;
 }
 
+@media screen and (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+    #burguer {
+        display: block;
+    }
+    }
+
 #burguer {
     color: white;
     cursor: pointer;
+    display: none;
 }
 
 #burguer:hover {
