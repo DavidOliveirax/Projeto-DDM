@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 100%;
     box-sizing: border-box;
     font-family: 'Poppins';
     font-size: 1em;
@@ -48,7 +47,7 @@ html, body {
     border-radius: 10px;
     padding: 50px;
     width: 900px;
-    height: 700px;
+    height: 650px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.059);
     margin-top: 200px;
@@ -80,15 +79,14 @@ html, body {
 
 #conteudo-secundario {
     background-color: white;
-    height: 1000px;
-    width: 100wh;
+    height: 800px;
     text-align: center;
     padding-top: 80px;
 }
 
 #montagem-gamer {
     background-image: url(imagens/fundo-gamer.jpg);
-    background-size: 1000px;
+    background-size: 900px;
     display: flex;
     align-items: center;
     text-align: left;
@@ -99,12 +97,12 @@ html, body {
 }
 
 #montagem-gamer h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
 #montagem-gamer h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: red;
 }
 
@@ -115,20 +113,20 @@ html, body {
 
 #montagem-gamer img {
     width: 950px;
+    padding: 0px;
+    margin: auto;
 }
 
 /* Atendimento Empresarial Conteudo 3*/
-
 #terceiro-conteudo {
     background-color: white;
     height: 1000px;
-    width: 100wh;
     text-align: center;
 }
 
 #empresarial {
     background-image: url(imagens/fundo-gamer.jpg);
-    background-size: 900px;
+    background-size: 800px;
     display: flex;
     align-items: center;
     text-align: left;
@@ -139,12 +137,12 @@ html, body {
 }
 
 #empresarial h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
 #empresarial h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: red;
 }
 
@@ -170,6 +168,7 @@ html, body {
     justify-content: space-evenly;
 }
 
+/* Versão para celular */
 @media screen and (max-width: 550px) {
     .menu {
         display: none;
@@ -192,7 +191,8 @@ html, body {
         height: auto;
     }
     #montagem-gamer img {
-        width: 480px;
+        width: 482px;
+        margin: 0px;
     }
     #montagem-gamer h1 {
         font-size: 1rem;
@@ -206,6 +206,31 @@ html, body {
     #montagem-gamer {
         display: block;
         text-align: left;
+    }
+    #conteudo-gamer {
+        margin: 15px;
+        padding: 15px;
+    }
+    #empresarial img {
+        width: 482px;
+        margin: 0px;
+    }
+    #empresarial h1 {
+        font-size: 1rem;
+    }
+    #empresarial h2 {
+        font-size: 1.3rem;
+    }
+    #empresarial p {
+        font-size: 0.9rem;
+    }
+    #empresarial {
+        display: block;
+        text-align: left;
+    }
+    #conteudo-empresa {
+        margin: 15px;
+        padding: 15px;
     }
 }
 
