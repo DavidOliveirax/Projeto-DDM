@@ -41,26 +41,21 @@ html, body {
     position: relative;
 }
 
+/* Conteudo Inicial */
 #principal > section {
     background: rgb(255, 255, 255, 0);
     text-align: center;
     border-radius: 10px;
-    padding: 15px;
+    padding: 50px;
     width: 900px;
     height: 700px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.059);
-    margin-top: 100px;
-}
-
-#conteudo-secundario {
-    background-color: white;
-    height: 1080px;
+    margin-top: 200px;
 }
 
 #conteudo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: left;
 }
@@ -81,11 +76,51 @@ html, body {
     width: 350px;
 }
 
+/* Segundo conteudo - Montagem gamer! */
+
+#conteudo-secundario {
+    background-color: white;
+    height: 1080px;
+    width: 100wh;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#montagem-gamer {
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#conteudo-gamer {
+    margin-left: 100px;
+}
+
+#montagem-gamer h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#montagem-gamer h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+#montagem-gamer p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#montagem-gamer img {
+    width: 900px;
+}
+
 /* Header */
 .container {
     background-color: rgb(49, 48, 48);
     width: 100%;
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -96,6 +131,39 @@ html, body {
 @media screen and (max-width: 550px) {
     .menu {
         display: none;
+    }
+    #conteudo {
+        display: block;
+    }
+    #conteudo > div > h1 {
+        margin-left: 50px;
+    }
+    #conteudo > div > p {
+        width: 80%;
+        margin-left: 50px;
+    }
+    #conteudo > div > img {
+        margin-left: 30px;
+    }
+    #principal > section {
+        width: 500px;
+        height: auto;
+    }
+    #montagem-gamer img {
+        width: 480px;
+    }
+    #montagem-gamer h1 {
+        font-size: 1rem;
+    }
+    #montagem-gamer h2 {
+        font-size: 1.3rem;
+    }
+    #montagem-gamer p {
+        font-size: 0.9rem;
+    }
+    #montagem-gamer {
+        display: block;
+        text-align: left;
     }
 }
 
@@ -132,7 +200,7 @@ header img {
 
 .botão-home {
     background-color: red;
-    padding: 8px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
