@@ -156,6 +156,28 @@ html, body {
     margin-left: 200px;
 }
 
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px black;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.container-carrossel {
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#imgnav {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
 /* Header */
 .container {
     background-color: rgb(49, 48, 48);
