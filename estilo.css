@@ -76,7 +76,6 @@ html, body {
 }
 
 /* Segundo conteudo - Montagem gamer! */
-
 #conteudo-secundario {
     background-color: white;
     height: 800px;
@@ -213,8 +212,9 @@ html, body {
         height: auto;
     }
     #montagem-gamer img {
-        width: 482px;
+        width: 450px;
         margin: 0px;
+        padding-left: 30px;
     }
     #montagem-gamer h1 {
         font-size: 1rem;
@@ -234,8 +234,9 @@ html, body {
         padding: 15px;
     }
     #empresarial img {
-        width: 482px;
+        width: 450px;
         margin: 0px;
+        padding-left: 30px;
     }
     #empresarial h1 {
         font-size: 1rem;
