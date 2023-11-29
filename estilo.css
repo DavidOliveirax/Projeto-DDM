@@ -119,7 +119,7 @@ html, body {
 /* Atendimento Empresarial Conteudo 3*/
 #terceiro-conteudo {
     background-color: white;
-    height: 1000px;
+    height: 700px;
     text-align: center;
 }
 
@@ -155,27 +155,47 @@ html, body {
     margin-left: 200px;
 }
 
-.carrossel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 2px 2px 4px black;
-    height: 500px;
-    width: 500px;
-    overflow: hidden;
-}
-
-.container-carrossel {
+/* Configurações slide produtos */
+.mySlide {
     display: none;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+}
+.container-products {
+    background-color: white;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-#imgnav {
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
+.products-title {
+    background-color: white;
+    text-align: center;
 }
+
+.products-title > h1 {
+    font-size: 3rem;
+    background-color: white;
+    text-align: center;
+}
+
+.products-title > h2 {
+    font-size: 1.4rem;
+    background-color: white;
+    text-align: center;
+}
+
+.products-title > a > button {
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
 
 /* Header */
 .container {
