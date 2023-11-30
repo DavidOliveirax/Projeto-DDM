@@ -75,6 +75,36 @@ html, body {
     width: 350px;
 }
 
+/* Apresentação Inicial */
+.init-container {
+    width: 100wh;
+    background-color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.initial-container {
+    width: 1200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 100px;
+}
+
+.initial-container h2 {
+    color: lightslategray;
+    font-size: 1rem;
+}
+
+.content {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    padding: 30px;
+    border-radius: 5px;
+}
+
 /* Segundo conteudo - Montagem gamer! */
 #conteudo-secundario {
     background-color: white;
