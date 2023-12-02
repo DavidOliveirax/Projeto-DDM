@@ -225,7 +225,22 @@ html, body {
     cursor: pointer;
 }
 
+/* Conteudo Vendas Desktop */
+.container-venda {
+    background-color: white;
+    width: 100%;
+}
 
+.desktop-venda {
+    width: 1200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 100px;
+}
 
 /* Header */
 .container {
