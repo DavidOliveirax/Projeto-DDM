@@ -6,8 +6,8 @@ const emailInput = document.getElementById('iemail1')
 const senhaInput = document.getElementById('isenha1')
 
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+form.addEventListener('submit', event => {
+    event.preventDefault()
 
     // Verificar se o nome está vazio
     if(nameInput.value === "") {
@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
     }
 
     // Se todos os campos estiverem corretos, envie o form.
-    form.submit();
+    alert(`Ola ${nameInput.value}, seus dados foram enviados com sucesso, obrigado pelo cadastro!`)
 })
 
 // Validar Email

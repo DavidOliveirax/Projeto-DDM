@@ -400,13 +400,15 @@ footer > p {
 
 /* Configurações Minha conta */
 #minha-conta {
-    width: 100wh;
-    height: 100vh;
+    height: 95vh;
+    width: 98vw;
+    margin-top: 350px;
 }
 
 #login {
     background: white;
     text-align: center;
+    margin: auto;
     padding: 15px;
     width: 600px;
     height: 400px;
@@ -430,15 +432,22 @@ footer > p {
 }
 
 /* Configurações Formulário */
-#formula > section {
+#formula {
+    height: 95vh;
+    width: 98vw;
+    margin-top: 350px;
+}
+
+#formula-box {
     background: white;
     text-align: center;
+    margin: auto;
     padding: 15px;
     width: 600px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.059);
-}
+} 
 
 #inome {
     margin: 3px;
