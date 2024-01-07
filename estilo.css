@@ -79,7 +79,6 @@ html, body {
 .init-container {
     width: 100wh;
     background-color: white;
-    height: 300px;
     display: flex;
     justify-content: center;
 }
@@ -92,6 +91,7 @@ html, body {
     text-align: center;
     font-size: 1.4rem;
     padding-top: 100px;
+    align-items: stretch;
 }
 
 .initial-container h2 {
@@ -201,6 +201,7 @@ html, body {
 .products-title {
     background-color: white;
     text-align: center;
+    padding: 20px;
 }
 
 .products-title > h1 {
@@ -239,6 +240,9 @@ html, body {
 
 /* Versão para celular */
 @media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
     .container {
         position: fixed;
     }
@@ -267,7 +271,6 @@ html, body {
     #montagem-gamer img {
         width: 480px;
         margin: 0px;
-        padding-left: 30px;
     }
     #montagem-gamer h1 {
         font-size: 1rem;
@@ -287,9 +290,8 @@ html, body {
         padding: 15px;
     }
     #empresarial img {
-        width: 480px;
+        width: 483px;
         margin: 0px;
-        padding-left: 30px;
     }
     #empresarial h1 {
         font-size: 1rem;
@@ -303,10 +305,17 @@ html, body {
     #empresarial {
         display: block;
         text-align: left;
+        background-size: contain;
     }
     #conteudo-empresa {
         margin: 15px;
         padding: 15px;
+    }
+    .initial-container {
+        height: 530px;
+
+        display: flex;
+        flex-direction: column;
     }
 }
 
